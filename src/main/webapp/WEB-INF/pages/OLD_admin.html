@@ -1,0 +1,32 @@
+<!--
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All USERS</title>
+</head>
+<body>
+<h2> HELLO ADMIN </h2>>
+<br>
+<br>
+<br>
+<br>
+<div th:each="user : ${userList}">
+    <a th:href="@{/{id}(id=${user.getId()})}" th:text="${user.getName()}">user</a>
+</div>
+<br>
+<br>
+<a href="/new">CREATE NEW USER</a>
+<br>
+<br>
+<br>
+<br>
+<br/>
+<a href="javascript: document.logoutForm.submit()" role="menuitem"> Logout</a>
+
+<form name="logoutForm" th:action="@{/logout}" method="post" th:hidden="true">
+    <input hidden type="submit" value="Sign Out"/>
+</form>
+
+</body>
+</html>-->
